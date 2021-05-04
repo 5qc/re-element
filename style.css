@@ -1,0 +1,102 @@
+@import url('https://re-element.glitch.me/assets/colors.css');
+
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+  font-family: HK Grotesk;
+  background-color: black;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  line-height: 105%;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 50px;
+}
+.subtitle, .subsubtitle, .wiki-article, .css {
+  font-family: 'Source Code Pro', monospace;
+}
+.subsubtitle {
+  font-style: italic;
+}
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+.wiki-name {
+  font-size: 30px;
+}
+
+.css-comment {
+  font-style: italic;
+  color: gray;
+}
+.css-element {
+  color: aqua;
+  font-weight: bold;
+}
+.css-other {
+  color: #a4a4e4;
+}
+.css-number, .css-atom {
+  color: #6eca98;
+}
+
+.html-tag, .html-tag-end {
+  font-weight: bold;
+  color: #79e6d9;
+}
+.html-tag:before {
+  content: "<";
+}
+.html-tag:after {
+  content: ">";
+}
+
+.html-tag-end:before {
+  content: "</";
+}
+.html-tag-end:after {
+  content: ">";
+}
