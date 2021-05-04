@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --aliceblue: #f0f8ff;
+  --antiquewhite: #faebd7;
+  --aqua: #00ffff;
+  --aquamarine: #7fffd4;
+  --azure: #f0ffff;
+  --beige: #f5f5dc;
+  --bisque: #ffe4c4;
+  --black: #000000;
+  --blanchedalmond: #ffebcd;
+  --blue: #0000ff;
+  --blueviolet: #8a2be2;
+  --brown: #a52a2a;
+  --burlywood: #deb887;
+  --cadetblue: #5f9ea0;
+  --chartreuse: #7fff00;
+  --chocolate: #d2691e;
+  --coral: #ff7f50;
+  --cornflowerblue: #6495ed;
+  --cornsilk: #fff8dc;
+  --crimson: #dc143c;
+  --cyan: #00ffff;
+  --darkblue: #00008b;
+  --darkcyan: #008b8b;
+  --darkgoldenrod: #b8860b;
+  --darkgray: #a9a9a9;
+  --darkgreen: #006400;
+  --darkgrey: #a9a9a9;
+  --darkkhaki: #bdb76b;
+  --darkmagenta: #8b008b;
+  --darkolivegreen: #556b2f;
+  --darkorange: #ff8c00;
+  --darkorchid: #9932cc;
+  --darkred: #8b0000;
+  --darksalmon: #e9967a;
+  --darkseagreen: #8fbc8f;
+  --darkslateblue: #483d8b;
+  --darkslategray: #2f4f4f;
+  --darkslategrey: #2f4f4f;
+  --darkturquoise: #00ced1;
+  --darkviolet: #9400d3;
+  --deeppink: #ff1493;
+  --deepskyblue: #00bfff;
+  --dimgray: #696969;
+  --dimgrey: #696969;
+  --dodgerblue: #1e90ff;
+  --firebrick: #b22222;
+  --floralwhite: #fffaf0;
+  --forestgreen: #228b22;
+  --fuchsia: #ff00ff;
+  --gainsboro: #dcdcdc;
+  --ghostwhite: #f8f8ff;
+  --goldenrod: #daa520;
+  --gold: #ffd700;
+  --gray: #808080;
+  --green: #008000;
+  --greenyellow: #adff2f;
+  --grey: #808080;
+  --honeydew: #f0fff0;
+  --hotpink: #ff69b4;
+  --indianred: #cd5c5c;
+  --indigo: #4b0082;
+  --ivory: #fffff0;
+  --khaki: #f0e68c;
+  --lavenderblush: #fff0f5;
+  --lavender: #e6e6fa;
+  --lawngreen: #7cfc00;
+  --lemonchiffon: #fffacd;
+  --lightblue: #add8e6;
+  --lightcoral: #f08080;
+  --lightcyan: #e0ffff;
+  --lightgoldenrodyellow: #fafad2;
+  --lightgray: #d3d3d3;
+  --lightgreen: #90ee90;
+  --lightgrey: #d3d3d3;
+  --lightpink: #ffb6c1;
+  --lightsalmon: #ffa07a;
+  --lightseagreen: #20b2aa;
+  --lightskyblue: #87cefa;
+  --lightslategray: #778899;
+  --lightslategrey: #778899;
+  --lightsteelblue: #b0c4de;
+  --lightyellow: #ffffe0;
+  --lime: #00ff00;
+  --limegreen: #32cd32;
+  --linen: #faf0e6;
+  --magenta: #ff00ff;
+  --maroon: #800000;
+  --mediumaquamarine: #66cdaa;
+  --mediumblue: #0000cd;
+  --mediumorchid: #ba55d3;
+  --mediumpurple: #9370db;
+  --mediumseagreen: #3cb371;
+  --mediumslateblue: #7b68ee;
+  --mediumspringgreen: #00fa9a;
+  --mediumturquoise: #48d1cc;
+  --mediumvioletred: #c71585;
+  --midnightblue: #191970;
+  --mintcream: #f5fffa;
+  --mistyrose: #ffe4e1;
+  --moccasin: #ffe4b5;
+  --navajowhite: #ffdead;
+  --navy: #000080;
+  --oldlace: #fdf5e6;
+  --olive: #808000;
+  --olivedrab: #6b8e23;
+  --orange: #ffa500;
+  --orangered: #ff4500;
+  --orchid: #da70d6;
+  --palegoldenrod: #eee8aa;
+  --palegreen: #98fb98;
+  --paleturquoise: #afeeee;
+  --palevioletred: #db7093;
+  --papayawhip: #ffefd5;
+  --peachpuff: #ffdab9;
+  --peru: #cd853f;
+  --pink: #ffc0cb;
+  --plum: #dda0dd;
+  --powderblue: #b0e0e6;
+  --purple: #800080;
+  --rebeccapurple: #663399;
+  --red: #ff0000;
+  --rosybrown: #bc8f8f;
+  --royalblue: #4169e1;
+  --saddlebrown: #8b4513;
+  --salmon: #fa8072;
+  --sandybrown: #f4a460;
+  --seagreen: #2e8b57;
+  --seashell: #fff5ee;
+  --sienna: #a0522d;
+  --silver: #c0c0c0;
+  --skyblue: #87ceeb;
+  --slateblue: #6a5acd;
+  --slategray: #708090;
+  --slategrey: #708090;
+  --snow: #fffafa;
+  --springgreen: #00ff7f;
+  --steelblue: #4682b4;
+  --tan: #d2b48c;
+  --teal: #008080;
+  --thistle: #d8bfd8;
+  --tomato: #ff6347;
+  --turquoise: #40e0d0;
+  --violet: #ee82ee;
+  --wheat: #f5deb3;
+  --white: #ffffff;
+  --whitesmoke: #f5f5f5;
+  --yellow: #ffff00;
+  --yellowgreen: #9acd32;
+}
+
+rainbow {
+  animation: color-change 3s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: gold;
+  }
+  42% {
+    color: lime;
+  }
+  56% {
+    color: blue;
+  }
+  71% {
+    color: purple;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+cursor[type="alias"] {
+  cursor: alias;
+}
+cursor[type="all-scroll"] {
+  cursor: all-scroll;
+}
+cursor[type="auto"] {
+  cursor: auto;
+}
+cursor[type="cell"] {
+  cursor: cell;
+}
+cursor[type="context-menu"] {
+  cursor: context-menu;
+}
+cursor[type="col-resize"] {
+  cursor: col-resize;
+}
+cursor[type="copy"] {
+  cursor: copy;
+}
+cursor[type="crosshair"] {
+  cursor: crosshair;
+}
+cursor[type="default"] {
+  cursor: default;
+}
+cursor[type="e-resize"] {
+  cursor: e-resize;
+}
+cursor[type="ew-resize"] {
+  cursor: ew-resize;
+}
+cursor[type="grab"] {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+cursor[type="grabbing"] {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+cursor[type="help"] {
+  cursor: help;
+}
+cursor[type="move"] {
+  cursor: move;
+}
+cursor[type="n-resize"] {
+  cursor: n-resize;
+}
+cursor[type="ne-resize"] {
+  cursor: ne-resize;
+}
+cursor[type="nesw-resize"] {
+  cursor: nesw-resize;
+}
+cursor[type="no-drop"] {
+  cursor: no-drop;
+}
+cursor[type="none"] {
+  cursor: none;
+}
+cursor[type="not-allowed"] {
+  cursor: not-allowed;
+}
+cursor[type="pointer"] {
+  cursor: pointer;
+}
+cursor[type="progress"] {
+  cursor: progress;
+}
+cursor[type="row-resize"] {
+  cursor: row-resize;
+}
+cursor[type="s-resize"] {
+  cursor: s-resize;
+}
+cursor[type="se-resize"] {
+  cursor: se-resize;
+}
+cursor[type="sw-resize"] {
+  cursor: sw-resize;
+}
+cursor[type="text"] {
+  cursor: text;
+}
+cursor[type="w-resize"] {
+  cursor: w-resize;
+}
+cursor[type="wait"] {
+  cursor: wait;
+}
+cursor[type="zoom-in"] {
+  cursor: zoom-in;
+}
+cursor[type="zoom-out"] {
+  cursor: zoom-out;
+}
+
+blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect;
+  animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+opacity[zero] {
+  opacity: 0;
+}
+opacity[one] {
+  opacity: 0.1;
+}
+opacity[two] {
+  opacity: 0.2;
+}
+opacity[three] {
+  opacity: 0.3;
+}
+opacity[four] {
+  opacity: 0.4;
+}
+opacity[five] {
+  opacity: 0.5;
+}
+opacity[six] {
+  opacity: 0.6;
+}
+opacity[seven] {
+  opacity: 0.7;
+}
+opacity[eight] {
+  opacity: 0.8;
+}
+opacity[nine] {
+  opacity: 0.9;
+}
+opacity[ten] {
+  opacity: 1;
+}
+
+color[aliceblue] {
+  color: var(--aliceblue);
+}
+bg[color=aliceblue] {
+  background-color: var(--aliceblue);
+}
+
+color[antiquewhite] {
+  color: var(--antiquewhite);
+}
+bg[color=antiquewhite] {
+  background-color: var(--antiquewhite);
+}
+
+color[aqua] {
+ color: var(--aqua);
+}
+bg[color=aqua] {
+  background-color: var(--aqua);
+}
+
+color[aquamarine] {
+  color: var(--aquamarine);
+}
+bg[color=aquamarine] {
+  background-color: var(--aquamarine);
+}
+
+color[azure] {
+  color: var(--azure);
+}
+bg[color=azure] {
+  background-color: var(--azure);
+}
+
+color[beige] {
+  color: var(--beige);
+}
+bg[color=beige] {
+  background-color: var(--beige);
+}
+
+color[bisque] {
+  color: var(--bisque);
+}
+bg[color=bisque] {
+  background-color: var(--bisque);
+}
+
+color[black] {
+  color: var(--black);
+}
+bg[color=black] {
+  background-color: var(--black);
+}
+
+color[blanchedalmond] {
+  color: var(--blanchedalmond);
+}
+bg[color=blanchedalmond] {
+  background-color: var(--blanchedalmond);
+}
+
+color[blue] {
+  color: var(--blue);
+}
+bg[color=blue] {
+  background-color: var(--blue);
+}
+
+color[blueviolet] {
+  color: var(--blueviolet);
+}
+bg[color=blueviolet] {
+  background-color: var(--blueviolet);
+}
+
+color[brown] {
+  color: var(--brown);
+}
+bg[color=brown] {
+  background-color: var(--brown);
+}
+
+color[burlywood] {
+  color: var(--burlywood);
+}
+bg[color=burlywood] {
+  background-color: var(--burlywood);
+}
+
+color[cadetblue] {
+  color: var(--cadetblue);
+}
+bg[color=cadetblue] {
+  background-color: var(--cadetblue);
+}
+
+color[chartreuse] {
+  color: var(--chartreuse);
+}
+bg[color=chartreuse] {
+  background-color: var(--chartreuse);
+}
+
+color[chocolate] {
+  color: var(--chocolate);
+}
+bg[color=chocolate] {
+  background-color: var(--chocolate);
+}
+
+color[coral] {
+  color: var(--coral);
+}
+bg[color=coral] {
+  background-color: var(--coral);
+}
+
+color[cornflowerblue] {
+  color: var(--cornflowerblue);
+}
+bg[color=cornflowerblue] {
+  background-color: var(--cornflowerblue);
+}
+
+color[cornsilk] {
+  color: var(--cornsilk);
+}
+bg[color=cornsilk] {
+  background-color: var(--cornsilk);
+}
+
+color[crimson] {
+  color: var(--crimson);
+}
+bg[color=crimson] {
+  background-color: var(--crimson);
+}
+
+color[cyan] {
+  color: var(--cyan);
+}
+bg[color=cyan] {
+  background-color: var(--cyan);
+}
+
+color[darkblue] {
+  color: var(--darkblue);
+}
+bg[color=darkblue] {
+  background-color: var(--darkblue);
+}
+
+color[darkcyan] {
+  color: var(--darkcyan);
+}
+bg[color=darkcyan] {
+  background-color: var(--darkcyan);
+}
+
+color[darkgoldenrod] {
+  color: var(--darkgoldenrod);
+}
+bg[color=darkgoldenrod] {
+  background-color: var(--darkgoldenrod);
+}
+
+color[darkgray] {
+  color: var(--darkgray);
+}
+bg[color=darkgray] {
+  background-color: var(--darkgray);
+}
+
+code, c {
+  font-family: "Source Code Pro", monospace;
+}
+
+o, overline {
+  text-decoration: overline;
+}
+underline {
+  text-decoration: underline;
+}
